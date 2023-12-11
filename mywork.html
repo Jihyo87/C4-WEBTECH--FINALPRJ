@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="Assets/css/site.css">
+    <script src="Assets/js/main.js" defer></script>
 </head>
 
 <body class="bg-slate-600">
@@ -14,7 +15,7 @@
 
 <main class="container mx-auto my-8 p-8 bg-sky-200 shadow-lg">
 
-    <nav class="mb-8 font-bold flex flex-row gap-10 border-b-8 bg-sky-200 ">
+    <nav class="mb-8 font-bold flex flex-row gap-10 border-b-8 border-rose-900  ">
         <a href="about.html" class="A1">About</a>
         <a href="contact.html" class="A2">Contact</a>
         <a href="index.html">Home</a>
@@ -54,6 +55,19 @@
                     <p class="text-center mt-6" >I have created a website from scratch and also responsive web design for my mobile layout  </p>
                     <p>In this mini website. I have an Ninja api to fetch the jokes and use it to extract the jokes when the user input how many jokes they want</p>
                 </section>
+
+                <h1 class="text-center font-extrabold"> Here is the example </h1>
+                <section class="border border-rose-900 bg-amber-200 p-8 rounded-md">
+                    <form class="Form m-auto flex flex-col items-center space-y-4 " method="get">
+                        <label for="numberofJokes" class=" underline pb-5 font-bold text-xl"> Please Enter number of Jokes:</label>
+                        <input class="border border-b-red-50 p-2 rounded-md text-center" type="number" id="numberofJokes" placeholder="Type it here">
+                        <button class="items-end w-full pt-10 border-rose-900  font-black" type="submit"> ➤ Get Jokes</button>
+                    </form>
+                    <form method="post" onsubmit="callAPI(); return false;">
+                        <div id="responseContainer"></div>
+                    </form>
+                </section>
+
                 <div class="bg-gray-200 font-bold text-right mt-6 text-gray-800 p-4 -m-4 ">
                     <p class="underline text-red-800"> Vincent Gasatan </p>
                 </div>
