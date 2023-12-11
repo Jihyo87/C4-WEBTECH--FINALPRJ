@@ -8,4 +8,4 @@ It's going to be my dashboard for my personal website.
 
 This is my color scheme:
 
-![img.png](img.png)
+![img_2.png](Assets/img/Colour scheme.png)
